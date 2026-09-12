@@ -1,0 +1,26 @@
+[project]
+name = "uxsim-traffic-flow-study"
+version = "0.1.0"
+description = "UXsimを用いた交通流シミュレーションの学習プロジェクト（Newell追従モデル・Incremental Node Model・動的利用者均衡の理解、将来的なETC2.0プローブデータとの比較検証を目標とする）"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+dependencies = [
+    "uxsim>=1.10",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "scipy>=1.10",
+    "jupyter>=1.0",
+    "notebook>=7.0",
+    "ipykernel>=6.25",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+]
+
+[tool.setuptools]
+packages = []

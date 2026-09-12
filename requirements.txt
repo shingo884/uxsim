@@ -1,0 +1,17 @@
+# UXsim交通流シミュレーション学習プロジェクト 依存パッケージ
+# Python >= 3.10 が必要 (UXsim本体の要件)
+#
+# セットアップ:
+#   python3.12 -m venv venv
+#   source venv/bin/activate   (Windowsは venv\Scripts\activate)
+#   pip install -r requirements.txt
+
+uxsim>=1.10        # 交通流シミュレーション本体
+numpy>=1.24
+pandas>=2.0         # 結果データ・実データ(ETC2.0プローブ等)の読み込み/加工
+matplotlib>=3.7     # 時空間図・速度プロファイルなどの可視化
+scipy>=1.10         # 補間・統計処理（実データ比較で使用予定）
+
+jupyter>=1.0
+notebook>=7.0
+ipykernel>=6.25
